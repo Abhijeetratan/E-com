@@ -26,7 +26,10 @@ process.on('uncaughtException', (err) => {
 
 const app = express();
 app.use(cors());
+
+if(process.env.NODE_ENV !== 'PRODUCTION'){
 dotenv.config({ path: 'backend/config/config.env' });
+}
 
 app.use(express.json({limit:"10mb"}));
 app.use(cookieParser());
