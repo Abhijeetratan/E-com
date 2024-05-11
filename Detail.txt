@@ -1,0 +1,72 @@
+1. npm init => install package.json
+
+2. npm i express dotenv mongoose --save
+                     => Install express dotenv and moongoose
+
+3. npm i nodemon --save-dev
+                     => Install nodemon 
+
+4. Devlopment Mode => This mode is designed for developers during the development and 
+                      testing phases of the software lifecycle.
+
+5. Production Mode => This mode is intended for the final deployment of the application 
+                      in a live, user-facing environment.
+                      
+6. ProductControllers => Add logic for end point
+
+   Req => req is an object that represents the HTTP request from the client to the server.
+
+   Res => res is an object that represents the HTTP response that the server will send back
+          to the client.
+
+   Next => next is a function that is passed to middleware functions and route handlers.      
+           If next is not called, the request-response cycle can be terminated, and no 
+           further middleware or route handlers will be executed.
+
+    .Pagination => Pagination is a common technique used in web development to break down a
+                large set of data into smaller, more manageable chunks or pages. In the 
+                context of a React application, you can implement pagination to display
+                a limited number of items on each page and allow users to navigate through
+                the data.
+
+7.Bcrypt => npm install bcrypt
+              Use of bcrypt=>
+              1. Bcrypt is a widely used library for hashing passwords in a secure and efficient manner. 
+              2. Basically is is use to save data in format that can not be shown directly.
+         => Salt Generation
+              Use of Salt Generation
+              1. A unique random salt is generated for each password. The salt is then combined with the
+                 password before hashing.        
+              2. This ensures that even if two users have the same password, their hashed passwords will 
+                 differ due to the unique salts.               
+         => Asynchronous Nature
+              1. The hashing and comparison functions are asynchronous, making them suitable for
+                 handling potentially time-consuming tasks without blocking the event loop.  
+
+8.Jwttoken => npm install jsonwebtoken
+         => JSON Web Tokens (JWT) are a compact, URL-safe means of representing claims between two parties.
+         => They are often used for authentication and authorization purposes in web development.
+
+9.Nodemailer => npm install nodemailer
+         => Nodemailer is a popular module for Node.js that allows you to send emails easily.
+
+10.CORS(Cross-Origin Resource Sharing)=> npm install cors
+         => It's a crucial mechanism for protecting user data and preventing malicious attacks like
+            Cross-Site Request Forgery (CSRF).       
+
+
+=========================FRONTEND=========================  
+
+==> React => npx create-react-app .
+          => React is a JavaScript library for building user interfaces, primarily for web applications.
+          => It was developed by Facebook and open-sourced in 2013. 
+          => React is widely used because of its simplicity, efficiency, and flexibility.
+
+   => Component-Based Architecture =>
+          => React is based on a component-based architecture, where UIs are composed of reusable and
+             independent components.
+          => Each component represents a part of the user interface and encapsulates its own logic, 
+             state, and structure.    
+   => Virtual DOM          
+
+
